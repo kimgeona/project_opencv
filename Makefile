@@ -223,7 +223,7 @@ ifeq ($(OS_NAME), MACOS)
 		&& git clone $(PROJECT_REPO); \
 	fi
 	@if [ -d $(PROJECT_NAME)/build ]; then \
-		echo "project : 프로젝트 $(PROJECT_NAME)_build가 이미 존재합니다."; \
+		echo "project : 프로젝트 $(PROJECT_NAME)/build가 이미 존재합니다."; \
 	else \
 		(\
 		echo "project : 프로젝트 $(PROJECT_NAME)를 빌드 합니다." \
@@ -246,7 +246,7 @@ ifeq ($(OS_NAME), WIN32)
 		&& git clone $(PROJECT_REPO) \
 	)
 	@if exist $(PROJECT_NAME)\\build (\
-		echo project : 프로젝트 $(PROJECT_NAME)_build가 이미 존재합니다. \
+		echo project : 프로젝트 $(PROJECT_NAME)/build가 이미 존재합니다. \
 	)\
 	else (\
 		(\
